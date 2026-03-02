@@ -1,15 +1,13 @@
 # Public-Key-Infrastructure-PKI-Lab
 
-In this task, we demonstrate how Public Key Infrastructure (PKI) helps ensure secure communication between a client and a server. Assume Alice wants to visit example.com via the HTTPS protocol. She needs to obtain the public key from the example.com server. Alice will generate a secret and encrypt the communication using the server’s public key so that the data can be transmitted securely.
+This lab investigates PKI and how digital certificates secure web communications. The work included building a root CA, issuing a server certificate, configuring an HTTPS server with OpenSSL, and testing browser behavior with certificate validation. Key observations included hostname mismatches, certificate trust issues, and the effect of modifying certificate files on connection security.
 
-Through the use of digital certificates issued by a trusted Certificate Authority (CA), Alice can verify the authenticity of the server’s public key. This process ensures that the communication channel remains confidential and that the data exchanged between the client and server is protected.
 
 1 	 Lab Overview 
 
 1.1 	Task 1: Lab Environment Overview:
 	
-  The main focus of this lab is to help us gain hands on experience with PKI. I learned how to create a self signed root CA, Generate Server certificates, deploy HTTPS websites using OpenSSL and Apache, observe browser reactions to certificate warnings, and understand how PKI prevents MITM attacks. 
-
+  The main focus of this lab is to provide hands-on experience with PKI. I learned how to create a self-signed root CA, generate server certificates, and deploy an HTTPS website using OpenSSL. I also observed how browsers react to certificate warnings, including issues such as untrusted certificates and hostname mismatches. Additionally, I gained a better understanding of certificate signing requests, certificate chains, and how PKI establishes trust to secure web communications. This lab provided practical insights into the processes that underlie secure web connections and the importance of proper certificate management.
 2 	Root CA and Certificate Generation
 
 2.1 	Task 1: Becoming a certificate authority  
